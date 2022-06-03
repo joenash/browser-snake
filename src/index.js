@@ -7,7 +7,7 @@ const io = require("socket.io")(http);
 
 nunjucks.configure("views", { autoescape: true, express: app });
 
-app.get("/blockly", (req, res) => {
+app.get("/editor", (req, res) => {
   res.render("index.html");
 });
 
